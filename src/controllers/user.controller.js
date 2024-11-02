@@ -131,7 +131,6 @@ export const updateUserCtrl = async (req, res) => {
 //fxn to delete a user
 export const delUserCtrl = async (req, res) => {
   const query = { _id: req.params.id };
-  // const { query } = req;
 
   const existingUser = await findUser(query);
   if (!existingUser) {
